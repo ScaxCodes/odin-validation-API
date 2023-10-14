@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation API</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form novalidate>
+      <div class="form-container">
+        <div class="input-container">
+          <div class="input-row">
+            <label for="mail">
+              <div class="input-container">
+                <span>E-Mail:</span>
+                <input />
+              </div>
+              <span class="error mail">Error</span>
+            </label>
+          </div>
+          <div class="input-row">
+            <label for="country">
+              <div class="input-container">
+                <span>Country:</span>
+                <input />
+              </div>
+              <span class="error country">Error</span>
+            </label>
+          </div>
+          <div class="input-row">
+            <label for="zip-code">
+              <div class="input-container">
+                <span>Zip Code:</span>
+                <input />
+              </div>
+              <span class="error zip-code">Error</span>
+            </label>
+          </div>
+          <div class="input-row">
+            <label for="password">
+              <div class="input-container">
+                <span>Password:</span>
+                <input />
+              </div>
+              <span class="error password">Error</span>
+            </label>
+          </div>
+          <div class="input-row">
+            <label for="confirmation">
+              <div class="input-container">
+                <span>Password Confirmation:</span>
+                <input />
+              </div>
+              <span class="error confirmation">Error</span>
+            </label>
+          </div>
+        </div>
+        <div class="submit-container">
+          <button>Submit</button>
+          <div class="box"></div>
+        </div>
+      </div>
+    </form>
+</body>
+</html>
