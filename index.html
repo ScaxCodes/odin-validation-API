@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation API</title>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
             <label for="mail">
               <div class="input-container">
                 <span>E-Mail:</span>
-                <input />
+                <input type="email" id="mail" name="mail" required/>
               </div>
               <span class="error mail">Error</span>
             </label>
@@ -24,7 +24,7 @@
             <label for="country">
               <div class="input-container">
                 <span>Country:</span>
-                <input />
+                <input id="country" name="country" required/>
               </div>
               <span class="error country">Error</span>
             </label>
@@ -33,7 +33,7 @@
             <label for="zip-code">
               <div class="input-container">
                 <span>Zip Code:</span>
-                <input />
+                <input id="zip-code" name="zip-code" required/>
               </div>
               <span class="error zip-code">Error</span>
             </label>
@@ -42,7 +42,7 @@
             <label for="password">
               <div class="input-container">
                 <span>Password:</span>
-                <input />
+                <input id="password" name="password" required/>
               </div>
               <span class="error password">Error</span>
             </label>
@@ -51,7 +51,7 @@
             <label for="confirmation">
               <div class="input-container">
                 <span>Password Confirmation:</span>
-                <input />
+                <input id="confirmation" name="confirmation" required/>
               </div>
               <span class="error confirmation">Error</span>
             </label>
