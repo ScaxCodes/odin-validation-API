@@ -45,9 +45,12 @@ label {
 }
 
 .box {
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
+  opacity: 0;
 }
 
 input:invalid.interacted {

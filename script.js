@@ -58,6 +58,18 @@ function checkZIP(str) {
   }
 }
 
+form.addEventListener("submit", () => {
+  const box = document.querySelector(".box");
+  box.style.opacity = 1;
+  if (form.checkValidity()) {
+    box.style.backgroundColor = "green";
+    box.textContent = "HIGH FIVE!"
+  }
+  else {
+    box.style.backgroundColor = "red";
+    box.textContent = "FAIL!"
+  }
+});
 
 
 
