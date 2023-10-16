@@ -49,3 +49,8 @@ label {
   width: 200px;
   height: 200px;
 }
+
+input:invalid.interacted {
+  background-color: rgb(233, 157, 157);
+  border: 2px solid red;
+}

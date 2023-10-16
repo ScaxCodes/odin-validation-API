@@ -4,6 +4,7 @@ const errors = form.querySelectorAll(".error");
 
 inputs.forEach(input => {
   input.addEventListener("input", (e) => {
+    input.classList.add("interacted");
     switch (input.name) {
       case "mail":
         if (input.validity.valid) {
@@ -45,16 +46,16 @@ inputs.forEach(input => {
 });
 
 function checkZIP(str) {
-  const constraints = "^(D-)?\\d{5}$";
   const regExp = /^(D-)?\d{5}$/;
 
   if (regExp.test(str)) {
+    inputs[2].setCustomValidity("");
     return "";
   }
   else {
+    inputs[2].setCustomValidity("NOPE!");
     return "Sir, please enter a valid german ZIP-Code (D-XXXXX)"
   }
-
 }
 
 
