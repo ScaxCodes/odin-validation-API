@@ -34,11 +34,13 @@ inputs.forEach(input => {
         }
         break;
       case "confirmation":
-        if (input.validity.valid) {
+        if (input.value == inputs[3].value) {
           errors[4].textContent = "";
+          input.setCustomValidity("");
         }
         else {
-          errors[4].textContent = "Sir, please enter a password confirmation";
+          errors[4].textContent = "Sir, the password does not match!";
+          input.setCustomValidity("NOPE!");
         }
         break;
     }
