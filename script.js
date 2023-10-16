@@ -3,7 +3,7 @@ const inputs = form.querySelectorAll("input");
 const errors = form.querySelectorAll(".error");
 
 inputs.forEach(input => {
-  input.addEventListener("input", (e) => {
+  input.addEventListener("focusout", (e) => {
     input.classList.add("interacted");
     switch (input.name) {
       case "mail":
